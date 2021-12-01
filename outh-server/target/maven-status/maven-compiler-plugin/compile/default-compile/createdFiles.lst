@@ -1,0 +1,9 @@
+com\joker\auth\config\WebFileterConfig.class
+com\joker\auth\config\TokenConfig.class
+com\joker\auth\config\TestFilter.class
+com\joker\auth\controller\UserController.class
+com\joker\auth\service\UserDetailsServiceImpl.class
+com\joker\auth\config\SecurityConfig.class
+com\joker\auth\controller\LoginController.class
+com\joker\auth\AuthServerApplication.class
+com\joker\auth\config\AuthorizationConfig.class

@@ -1,0 +1,4 @@
+com\joker\oss\controller\OssController.class
+com\joker\oss\config\SecurityConfig.class
+com\joker\oss\OssAplication.class
+com\joker\oss\config\OssWebConfig.class

@@ -1,0 +1,49 @@
+
+
+server:
+  port: 8083
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        name: client
+
+
+security:
+  oauth2:
+    client:
+      client-id: client
+      client-secret: secret
+      access-token-uri: http://localhost:8085/oauth/token
+      user-authorization-uri: http://localhost:8085/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:9002/user
+      jwt:
+        key-value: test-secret
+
+logging:
+  level:
+    root: debug
+    sun.*: info
+#auth-server: http://localhost:8081/auth
+#server:
+#  port: 8083
+#  servlet:
+#    context-path: /
+#  session:
+#    cookie:
+#      name: SESSION1
+#security:
+#  basic:
+#    enabled: false
+#  oauth2:
+#    client:
+#      clientId: client
+#      clientSecret: secret
+#      accessTokenUri: ${auth-server}/oauth/token
+#      userAuthorizationUri: ${auth-server}/oauth/authorize
+#    resource:
+#      userInfoUri: ${auth-server}/user
+#spring:
+#  thymeleaf:
+#    cache: false
